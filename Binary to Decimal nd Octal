@@ -1,0 +1,26 @@
+import java.util.*;
+public class bina
+{
+
+    public static void main(String[] args)
+    {
+	Scanner scan;
+    int num;
+try{
+          scan = new Scanner(System.in);
+          System.out.println("Binary Number: ");
+          num = Integer.parseInt(scan.nextLine(),2);
+
+
+           String decimal = Integer.toString(num);
+           System.out.println("decimal Number = " + decimal);
+
+           String octal = Integer.toOctalString(num);
+           System.out.println("Octal = " + octal);
+}
+catch(Exception e)
+{
+System.out.println("enter valid input");
+}
+    }
+}
